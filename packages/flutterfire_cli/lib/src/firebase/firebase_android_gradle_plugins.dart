@@ -7,9 +7,9 @@ import '../common/utils.dart';
 import '../flutter_app.dart';
 import 'firebase_options.dart';
 
-// https://regex101.com/r/w2ovos/1
+// https://regex101.com/r/9xClxm/1
 final _androidBuildGradleRegex = RegExp(
-  r'''(?:\s*?dependencies\s?{$\n(?<indentation>[\s\S\w]*?)classpath\s?['"]{1}com\.android\.tools\.build:gradle:.*?['"]{1}\s*?$)''',
+  r'''(?:\s*?dependencies\s?{$(?:\r\n|\n)(?<indentation>[\s\S\w]*?)classpath\s?['"]{1}com\.android\.tools\.build:gradle:.*?['"]{1}\s*?$)''',
   multiLine: true,
 );
 // https://regex101.com/r/rbfAdd/1
